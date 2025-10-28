@@ -1,101 +1,71 @@
 export interface BlogPost {
   id: string;
   title: string;
+  slug: string;
   excerpt: string;
-  date: string;
-  comments: number;
+  content: string;
   author: {
     name: string;
     image: string;
   };
+  date: string;
   image: string;
+  category: string;
   tags: string[];
-  slug: string;
+  comments: number;
+  readTime: string;
 }
 
 export const blogPosts: BlogPost[] = [
   {
     id: '1',
-    title: 'Improving Business Growth with New Technology',
-    excerpt: 'Winning the Digital business The 2025 Transformation Roadmap. Holisticly leverage existing magnetic. Next-Gen Digital Transformation',
-    date: 'April 5, 2025',
-    comments: 80,
+    title: 'Top IT Trends in 2025. What Businesses Need to Know',
+    slug: 'top-it-trends-2025',
+    excerpt: 'Discover the latest IT trends that are shaping the future of business technology.',
+    content: 'Out enigma ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     author: {
-      name: 'Malaika alise',
+      name: 'Admin',
       image: '/itzone-technology-it-solutions-html5-template/assets/images/blog/blog-one-user-1.jpg'
     },
+    date: '12 Nov',
     image: '/itzone-technology-it-solutions-html5-template/assets/images/blog/blog-2-1.jpg',
-    tags: ['Digital', 'Technology'],
-    slug: 'improving-business-growth'
+    category: 'Technology',
+    tags: ['Technology', 'IT'],
+    comments: 5,
+    readTime: '4 Min Read'
   },
   {
     id: '2',
-    title: 'Regional Manager & limited management.',
-    excerpt: 'Winning the Digital business The 2025 Transformation Roadmap.',
-    date: 'April 5, 2025',
-    comments: 80,
+    title: 'Adapting to Digital Marketing Trends: Staying Ahead',
+    slug: 'digital-marketing-trends',
+    excerpt: 'Learn how to stay ahead in the ever-evolving digital marketing landscape.',
+    content: 'Digital marketing continues to evolve rapidly with new technologies and platforms.',
     author: {
-      name: 'Readik males',
+      name: 'Admin',
       image: '/itzone-technology-it-solutions-html5-template/assets/images/blog/blog-one-user-2.jpg'
     },
+    date: '18 Mar',
     image: '/itzone-technology-it-solutions-html5-template/assets/images/blog/blog-2-2.jpg',
-    tags: ['Digital', 'Technology'],
-    slug: 'regional-manager-limited-management'
+    category: 'Marketing',
+    tags: ['Marketing', 'Digital'],
+    comments: 8,
+    readTime: '5 Min Read'
   },
   {
     id: '3',
-    title: 'Easy and Most Powerful Server and Platform.',
-    excerpt: 'Winning the Digital business The 2025 Transformation Roadmap.',
-    date: 'April 5, 2025',
-    comments: 80,
+    title: 'Standing Out in a Competitive Market',
+    slug: 'competitive-market-strategies',
+    excerpt: 'Strategies to help your business stand out from the competition.',
+    content: 'In today competitive business environment, differentiation is key to success.',
     author: {
-      name: 'Tamu Tanu',
+      name: 'Admin',
       image: '/itzone-technology-it-solutions-html5-template/assets/images/blog/blog-one-user-3.jpg'
     },
+    date: '18 Apr',
     image: '/itzone-technology-it-solutions-html5-template/assets/images/blog/blog-2-3.jpg',
-    tags: ['Digital', 'Technology'],
-    slug: 'powerful-server-platform'
-  },
-  {
-    id: '4',
-    title: 'Improving Business Growth with New Technology',
-    excerpt: 'Winning the Digital business The 2025 Transformation Roadmap.',
-    date: 'Aug 9, 2025',
-    comments: 80,
-    author: {
-      name: 'Hardik Pandey',
-      image: '/itzone-technology-it-solutions-html5-template/assets/images/blog/blog-one-user-4.jpg'
-    },
-    image: '/itzone-technology-it-solutions-html5-template/assets/images/blog/blog-2-4.jpg',
-    tags: ['Digital', 'Technology'],
-    slug: 'business-growth-technology'
-  },
-  {
-    id: '5',
-    title: 'The Role of AI in IT Support and Security',
-    excerpt: 'Winning the Digital business The 2025 Transformation Roadmap.',
-    date: 'may 14, 2025',
-    comments: 80,
-    author: {
-      name: 'Ronalfi Kenis',
-      image: '/itzone-technology-it-solutions-html5-template/assets/images/blog/blog-one-user-5.jpg'
-    },
-    image: '/itzone-technology-it-solutions-html5-template/assets/images/blog/blog-2-5.jpg',
-    tags: ['Digital', 'Technology'],
-    slug: 'ai-it-support-security'
-  },
-  {
-    id: '6',
-    title: 'Advanced Cloud Computing Solutions',
-    excerpt: 'Winning the Digital business The 2025 Transformation Roadmap.',
-    date: 'Janu 15, 2025',
-    comments: 80,
-    author: {
-      name: 'Tapila Gos',
-      image: '/itzone-technology-it-solutions-html5-template/assets/images/blog/blog-one-user-6.jpg'
-    },
-    image: '/itzone-technology-it-solutions-html5-template/assets/images/blog/blog-2-6.jpg',
-    tags: ['Digital', 'Technology'],
-    slug: 'cloud-computing-solutions'
+    category: 'Business',
+    tags: ['Business', 'Strategy'],
+    comments: 12,
+    readTime: '6 Min Read'
   }
 ];
